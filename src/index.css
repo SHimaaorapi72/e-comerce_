@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer !important;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+ 
+.product{
+    transition: border 1s , box-shadow 1s !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product:hover
+{
+    box-shadow: 1px 1px 10px #4fa74f !important;
+    /* border: solid 1px var(--main-color) !important; */
+    
+}
+.card{
+    transition: all 0.5s ;
+}
+
+.card:hover
+{
+    box-shadow: 1px 1px 10px #4fa74f !important ; 
+    /* border: solid 1px var(--main-color) !important; */
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s !important;
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+}
+.product:hover .btn 
+{
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color) !important;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+.imgfit{
+    object-position: center;
+    object-fit: cover;
+}
+
+.h3text{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.link{
+    color: black !important;
+    transition: all 0.5s;
+}
+.link:hover{
+    color: var(--main-color) !important;
+}
+
+.content-container {
+    margin-top: 100px; /* Adjust this value based on your navbar's height */
+  }
+
+  .font{
+    font-size: 24px;
+  }
+
+  .font-ul{
+font-size: 14px;
+color: rgb(0 0 0 / 65%) !important;
+transition: all 0.4s !important;
+  }
+
+  .font-ul:hover{
+    color:rgb(0 0 0 / 80%) !important;
+  }
+
+
+ 
+
+  
+  @media screen and (max-width: 991px) {
+   
+ 
+    .navbar>.container{
+        justify-content:space-between !important;
+    }
+
+    .rightlinks{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .leftlinks{
+        padding-top: 15px;
+    }
+
+  
+  }
+
+  .imgnotfoud {
+    max-height: 100vh !important;
+    width: auto;
+    height: auto;
+    object-fit:cover; /* Optional: maintain aspect ratio while covering the viewport */
+  }
